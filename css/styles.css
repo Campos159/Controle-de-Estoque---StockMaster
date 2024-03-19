@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #272323;
+}
+
+/* navbar */
+
+.nav-container .btn-menumobile {
+    display: none;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background: #0D0D0D;
+    border-bottom: 1px solid  #33FF14;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    font-size: 80px;
+    padding: .1em 0;
+    color: #33FF14;
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin : 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    transition: .5s; 
+}
+
+
+.nav-container li a:hover {
+    color: #33FF14;
+}
+/* add product form */
+#stock-header {
+    margin-top: 3em;
+}
+
+#stock-header h2 {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    padding-bottom: 2em;
+}
+
+#add-stock-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    position: relative;
+}
+
+#add-stock-form input {
+    box-sizing: border-box;
+    border: 1px solid #33FF14;
+    background: #0D0D0D;
+    color: #33FF14;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#add-stock-form input::placeholder {
+    color: #33FF14;
+}
+
+#add-stock-form input:focus {
+    outline: none;
+}
+
+#add-btn {
+    background: #33FF14;
+    border: 1px solid #33FF14;
+    cursor: pointer;
+    transition: .5s;
+    width: 100%;
+    height: 53px;
+    font-size: 25px;
+}
+
+#add-btn:hover {
+    background-color: #33FF14;
+    color: #FFF;
+}
+
+
+/* stock-list-container */
+
+#stock-list-container h2 {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    color: #FFF;
+}
+
+/* stock-list */
+
+#stock-info {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+}
+
+
+#stock-info p:nth-child(2) {
+    padding-left: 23em;
+}
+
+#stock-list {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 2em;
+    padding-top: 0;
+}
+
+#stock-list li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #33FF14;
+    background-color: #0D0D0D;
+    color: #33FF14;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#stock-list li span {
+    font-size: 18px;
+}
+
+.stock-amount {
+    float: right;
+    padding-right: 6em;
+}
+
+#stock-list i {
+    position: absolute;
+    height: 35px;
+    transition: .5s;
+    cursor: pointer;
+    padding: .3em;
+    font-size: 30px;
+}
+
+.done-btn {
+    right: 40px;
+}
+
+.done-btn:hover {
+    color: #FFF;
+    background-color: #33FF14;
+}
+
+.remove-btn {
+    right: 0;
+}
+
+.remove-btn:hover {
+    color: #FFF;
+    background-color: #EB0927;
+}
+
+.hide {
+    display: none;
+}

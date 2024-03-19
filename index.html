@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fd8e5f58ab.js" crossorigin="anonymous"></script>
+    <title>StockMaster</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <i id="logo" class="fa-solid fa-boxes-stacked"></i>
+            </a>
+            <i class="fas fa-bars btn-menumobile"></i>
+            <ul>
+                <li><a href="index.html">Produtos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="stock-container">
+        <div id="stock-header">
+            <h2>Adicione um produto:</h2>
+            <form action="" id="add-stock-form">
+                <input type="text" id="product-name" placeholder="Digite o nome do produto">
+                <input type="number" id="product-amount" placeholder="Digite a quantidade">
+
+                <button id="add-btn" type="submit">
+                    Adicionar
+                </button>
+            </form>
+        </div>
+
+<div id="stock-container">
+    <div id="stock-list-container">
+        <h2>Produtos em estoque:</h2>
+        
+        <div id="stock-info">
+            <p>Produto</p>
+            <p>Quantidade</p>
+        </div>
+        <ul id="stock-list">
+           <li class="stock-box template hide">
+               <span class="stock-title"></span>
+               <span class="stock-amount"></span>
+               <i class="fa-solid fa-plus done-btn"></i>
+               <i class="fa-solid fa-xmark remove-btn"></i>
+           </li>
+        </ul>
+       </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
